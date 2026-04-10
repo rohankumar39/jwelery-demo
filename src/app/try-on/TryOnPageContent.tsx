@@ -54,6 +54,7 @@ export default function TryOnPageContent() {
             { tip: 'Good lighting works best', cat: 'all' },
             { tip: 'Face the camera directly for earrings', cat: 'earrings' },
             { tip: 'Show your full hand for rings & bangles', cat: 'ring' },
+            { tip: 'Requires HTTPS (or localhost) for camera access', cat: 'tech' },
           ].map(({ tip }) => (
             <div key={tip} className="flex items-center gap-1.5">
               <span className="text-gold-500 text-[0.65rem]">◆</span>

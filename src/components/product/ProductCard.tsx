@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Camera, MessageCircle, ArrowRight } from 'lucide-react';
 import { cn, CATEGORY_LABELS, formatPrice } from '@/lib/utils';
@@ -24,7 +23,7 @@ export default function ProductCard({ product, index = 0, layout = 'grid' }: Pro
       >
         {/* Thumbnail */}
         <div className="relative w-24 h-24 flex-shrink-0 rounded-sm overflow-hidden bg-ivory-warm flex items-center justify-center">
-          <Image src={product.images[0]} alt={product.name} fill className="object-cover" sizes="96px" />
+          <img src={product.images[0]} alt={product.name} className="absolute inset-0 w-full h-full object-cover" />
           {product.isNew && (
             <span className="absolute top-1.5 left-1.5 font-body text-[0.5rem] tracking-widest uppercase px-1.5 py-0.5 bg-gold-500 text-obsidian-900">New</span>
           )}
@@ -69,12 +68,10 @@ export default function ProductCard({ product, index = 0, layout = 'grid' }: Pro
       {/* Image */}
       <div className="relative aspect-square overflow-hidden bg-ivory-warm flex items-center justify-center"
         style={{ background: 'linear-gradient(135deg,rgba(201,168,76,0.07) 0%,rgba(255,255,255,1) 100%)' }}>
-        <Image
+        <img
           src={product.images[0]}
           alt={product.name}
-          fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
 
         {/* Badges */}

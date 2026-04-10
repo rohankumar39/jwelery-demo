@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Hero() {
@@ -9,14 +8,6 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background layers */}
       <div className="absolute inset-0 bg-ivory-DEFAULT" />
-      <Image 
-        src="https://images.unsplash.com/photo-1515562141207-7a8efd92d47c?auto=format&fit=crop&q=80&w=2070" 
-        alt="Jewellery Background" 
-        fill 
-        className="object-cover opacity-20" 
-        sizes="100vw"
-        priority 
-      />
       <div className="absolute inset-0 bg-hero-radial" />
 
       {/* Decorative gold orbs */}

@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Camera, MessageCircle, ArrowLeft, Check, Package, Shield, RefreshCw } from 'lucide-react';
 import { formatPrice, CATEGORY_LABELS, cn } from '@/lib/utils';
@@ -48,13 +47,10 @@ export default function ProductDetail({ product }: { product: Product }) {
             {/* Main image */}
             <div className="relative aspect-square rounded-sm overflow-hidden bg-ivory-warm mb-4 flex items-center justify-center"
               style={{ background: 'linear-gradient(135deg,rgba(201,168,76,0.08) 0%,rgba(255,255,255,1) 100%)' }}>
-              <Image
+              <img
                 src={product.images[activeImg]}
                 alt={product.name}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
+                className="absolute inset-0 w-full h-full object-cover"
               />
               {/* Badges */}
               <div className="absolute top-4 left-4 flex gap-2">
@@ -82,12 +78,10 @@ export default function ProductDetail({ product }: { product: Product }) {
                   )}
                 >
                   <div className="relative w-full h-full">
-                    <Image
+                    <img
                       src={img}
                       alt={`${product.name} preview`}
-                      fill
-                      className="object-cover rounded-sm"
-                      sizes="64px"
+                      className="absolute inset-0 w-full h-full object-cover rounded-sm"
                     />
                   </div>
                 </button>

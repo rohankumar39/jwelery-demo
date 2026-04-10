@@ -59,7 +59,7 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop nav */}
-            <nav className="hidden md:flex items-center gap-1">
+            <nav className="hidden lg:flex items-center gap-6">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}
@@ -83,7 +83,7 @@ export default function Navbar() {
             {/* Mobile toggle */}
             <button
               onClick={() => setMenuOpen(v => !v)}
-              className="md:hidden p-2 text-[rgba(10,10,10,0.7)] hover:text-obsidian-900 transition-colors"
+              className="lg:hidden p-2 text-[rgba(10,10,10,0.7)] hover:text-obsidian-900 transition-colors"
               aria-label="Toggle menu"
             >
               {menuOpen ? <X size={22} /> : <Menu size={22} />}

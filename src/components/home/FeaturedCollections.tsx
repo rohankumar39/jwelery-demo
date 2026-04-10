@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowRight, Camera, MessageCircle } from 'lucide-react';
 import { getFeaturedProducts, formatPrice } from '@/data/products';
 import { buildProductEnquiryURL } from '@/lib/whatsapp';
@@ -45,15 +44,12 @@ export default function FeaturedCollections() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="group card-light card-light-hover rounded-sm overflow-hidden"
             >
-              {/* Image area */}
               <div className="relative aspect-square overflow-hidden bg-ivory-warm">
                 {/* Product Image */}
-                <Image 
+                <img 
                   src={product.images[0]} 
                   alt={product.name} 
-                  fill 
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
 
                 {/* Badges */}
