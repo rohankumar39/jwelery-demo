@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 140" width="300" height="140">
+  <defs>
+    <linearGradient id="ng" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8C560"/>
+      <stop offset="100%" stop-color="#B8932A"/>
+    </linearGradient>
+  </defs>
+  <!-- Chain layer 1 (top) -->
+  <path d="M30 25 Q150 10, 270 25" fill="none" stroke="#C9A84C" stroke-width="2.5" opacity="0.8"/>
+  <!-- Chain layer 2 -->
+  <path d="M20 45 Q150 28, 280 45" fill="none" stroke="#C9A84C" stroke-width="2" opacity="0.7"/>
+  <!-- Chain layer 3 (bottom) -->
+  <path d="M15 65 Q150 46, 285 65" fill="none" stroke="#C9A84C" stroke-width="1.5" opacity="0.6"/>
+  <!-- Medallion pendants - 7 across -->
+  <g opacity="0.92">
+    <ellipse cx="60" cy="60" rx="14" ry="18" fill="url(#ng)"/>
+    <circle cx="60" cy="57" r="5" fill="#E8C560" opacity="0.7"/>
+    <ellipse cx="60" cy="70" rx="6" ry="4" fill="#9A2020" opacity="0.8"/>
+    
+    <ellipse cx="105" cy="68" rx="14" ry="20" fill="url(#ng)"/>
+    <circle cx="105" cy="64" r="5.5" fill="#E8C560" opacity="0.7"/>
+    <ellipse cx="105" cy="76" rx="6" ry="4" fill="#1A7A1A" opacity="0.8"/>
+    
+    <ellipse cx="150" cy="75" rx="18" ry="26" fill="url(#ng)"/>
+    <circle cx="150" cy="69" r="7" fill="#E8C560" opacity="0.8"/>
+    <ellipse cx="150" cy="85" rx="8" ry="5" fill="#9A2020" opacity="0.8"/>
+    
+    <ellipse cx="195" cy="68" rx="14" ry="20" fill="url(#ng)"/>
+    <circle cx="195" cy="64" r="5.5" fill="#E8C560" opacity="0.7"/>
+    <ellipse cx="195" cy="76" rx="6" ry="4" fill="#1A7A1A" opacity="0.8"/>
+    
+    <ellipse cx="240" cy="60" rx="14" ry="18" fill="url(#ng)"/>
+    <circle cx="240" cy="57" r="5" fill="#E8C560" opacity="0.7"/>
+    <ellipse cx="240" cy="70" rx="6" ry="4" fill="#9A2020" opacity="0.8"/>
+  </g>
+  <!-- Decorative dots along chain -->
+  <g fill="#E8C560" opacity="0.6">
+    <circle cx="82" cy="52" r="3"/>
+    <circle cx="127" cy="58" r="3"/>
+    <circle cx="172" cy="58" r="3"/>
+    <circle cx="217" cy="52" r="3"/>
+  </g>
+</svg>

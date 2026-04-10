@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 160" width="80" height="160">
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#E8C560"/>
+      <stop offset="100%" stop-color="#B8932A"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#9A7B1C"/>
+    </radialGradient>
+  </defs>
+  <!-- Hook -->
+  <path d="M40 5 C40 5, 45 10, 45 18 C45 24, 40 26, 40 26 C40 26, 35 24, 35 18 C35 10, 40 5, 40 5Z" fill="url(#g1)" opacity="0.9"/>
+  <!-- Top disc -->
+  <ellipse cx="40" cy="40" rx="22" ry="10" fill="url(#g1)" opacity="0.95"/>
+  <!-- Center stone cluster -->
+  <circle cx="40" cy="40" r="8" fill="#E8C560" opacity="0.8"/>
+  <circle cx="28" cy="40" r="4" fill="#C9A84C" opacity="0.7"/>
+  <circle cx="52" cy="40" r="4" fill="#C9A84C" opacity="0.7"/>
+  <!-- Jhumka bell body -->
+  <path d="M18 40 Q15 75, 40 88 Q65 75, 62 40Z" fill="url(#g2)" opacity="0.92"/>
+  <!-- Bell detail rings -->
+  <ellipse cx="40" cy="55" rx="18" ry="3" fill="none" stroke="#E8C560" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="40" cy="67" rx="15" ry="2.5" fill="none" stroke="#E8C560" stroke-width="1" opacity="0.5"/>
+  <!-- Pearl drops -->
+  <circle cx="33" cy="95" r="4" fill="#FAF7F0" opacity="0.9"/>
+  <circle cx="40" cy="100" r="4.5" fill="#FAF7F0" opacity="0.9"/>
+  <circle cx="47" cy="95" r="4" fill="#FAF7F0" opacity="0.9"/>
+  <!-- Drop chains -->
+  <line x1="33" y1="88" x2="33" y2="91" stroke="#C9A84C" stroke-width="1" opacity="0.7"/>
+  <line x1="40" y1="88" x2="40" y2="95" stroke="#C9A84C" stroke-width="1" opacity="0.7"/>
+  <line x1="47" y1="88" x2="47" y2="91" stroke="#C9A84C" stroke-width="1" opacity="0.7"/>
+</svg>

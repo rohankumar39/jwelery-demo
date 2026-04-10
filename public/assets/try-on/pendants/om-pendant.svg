@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 100" width="80" height="100">
+  <defs>
+    <radialGradient id="og" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#E8C560"/>
+      <stop offset="100%" stop-color="#C9A84C"/>
+    </radialGradient>
+  </defs>
+  <!-- Chain loop -->
+  <path d="M40 5 C43 5, 47 8, 47 14 C47 20, 43 23, 40 23 C37 23, 33 20, 33 14 C33 8, 37 5, 40 5Z" fill="url(#og)" opacity="0.85"/>
+  <!-- Circular pendant body -->
+  <circle cx="40" cy="65" r="32" fill="url(#og)" opacity="0.9"/>
+  <circle cx="40" cy="65" r="28" fill="#B8932A" opacity="0.5"/>
+  <!-- Om symbol (simplified) -->
+  <text x="40" y="76" text-anchor="middle" font-size="32" font-family="serif" fill="#FAF0D0" opacity="0.9">ॐ</text>
+  <!-- Border detail -->
+  <circle cx="40" cy="65" r="31" fill="none" stroke="#E8C560" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="40" cy="65" r="27" fill="none" stroke="#E8C560" stroke-width="0.8" opacity="0.4"/>
+</svg>

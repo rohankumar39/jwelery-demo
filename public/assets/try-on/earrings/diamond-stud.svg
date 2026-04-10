@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 60" width="50" height="60">
+  <defs>
+    <radialGradient id="ds" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#E8F4FF"/>
+      <stop offset="100%" stop-color="#B0D4F0"/>
+    </radialGradient>
+  </defs>
+  <!-- Post -->
+  <rect x="23" y="2" width="4" height="12" rx="2" fill="#C9A84C" opacity="0.8"/>
+  <!-- Setting prongs -->
+  <circle cx="25" cy="22" r="12" fill="#C9A84C" opacity="0.25"/>
+  <circle cx="25" cy="22" r="9" fill="url(#ds)" opacity="0.95"/>
+  <!-- Diamond facets -->
+  <polygon points="25,13 33,20 25,22 17,20" fill="white" opacity="0.4"/>
+  <polygon points="25,31 33,24 25,22 17,24" fill="#B0D4F0" opacity="0.3"/>
+  <polygon points="17,20 25,22 17,24" fill="white" opacity="0.25"/>
+  <polygon points="33,20 25,22 33,24" fill="#90B8E0" opacity="0.25"/>
+  <!-- Sparkle -->
+  <circle cx="20" cy="17" r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="28" cy="15" r="1" fill="white" opacity="0.7"/>
+</svg>
